@@ -8,9 +8,7 @@ on:
 jobs:
   build-docker-image:
     runs-on: ubuntu-22.04
-    # env:
-    #   DOCKER_HUB_TOKEN: ${{ secrets.DOCKER_HUB_TOKEN }}
-    #   DOCKER_HUB_USER: jssice
+
 
     steps:
       - name: checkout code
