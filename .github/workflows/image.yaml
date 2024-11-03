@@ -14,10 +14,10 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v3
       - name: build docker image
-        uses: ./.github/action/docker
+        uses: ./.github/actions/docker
         with: 
           docker_hub_user: ${{ secrets.DOCKER_HUB_USER }}
-          docker_hub_token: ${{ secrets.GITHUB_TOKEN }}
+          docker_hub_token: ${{ secrets.GITHUB_HUB_TOKEN }}
           image_name: fastapi-mongo-demo:latest
 
       
